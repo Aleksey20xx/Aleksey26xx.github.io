@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepage.css">
+    <script src="js-page/scriptpage.js"></script>
+    <title>myPage</title>
+</head>
+<body >
+    <div class="wrapper">
+        <header class="header">
+            <section class="fullscreen">
+                <div class="header__title">
+                    <h1>Приветствую вас в моем <br> портфолио!</h1>
+                </div>
+            </section>
+        </header>
+        <section class="profil anim-items">    
+            <article class="profil__block ">
+                <img src="img-page/photo 1.png" alt="">
+                <div class="profile__block-items">
+                    <h3 class="profil__block-title">Немного обо мне</h3>
+                    <p class="profil__block-text">Добрый день, меня зовут Алексей, и я очень рад, что вы посетели данную страницу! Коротко о том, что умею: верстаю адаптивно, кроссбраузерно, владею <span>bootstrap</span> сеткой, по-необходимости создаю анимации на сайте. В объемных проектах применяю <span>gulp</span> и язык стилей <span>Scss</span> для ускорения работы. </p>
+                </div>
+            </article>
+            <nav class="link anim-items">
+                <ul class="link__list">
+                    <li >
+                        <button class="button btn-1" type="submit" data-modal="btn1">Лендинги</button>
+                    </li>
+                    <li >
+                        <button class="button btn-2" type="submit" data-modal="btn2">Многостраничники</button>
+                    </li>
+                    <li >
+                        <button class="button btn-3" type="submit" data-modal="btn3">Письма</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="price">
+                <article class="price__item anim-items">
+                    <h3>Доступно</h3>
+                    <p>Я предлагаю наиболее выгодную цену на рынке фриланса за верску вашего статичного сайта - <span>от 1 тыс.руб</span>. <br>Полная стоимость обговаривается после ознакосления с макетом</p>
+                </article>
+                <article class="price__item anim-items">
+                    <h3>Быстро</h3>
+                    <p>Работа над проектом начинается сразу после вашей заявки. Срок выполнения: <span>от нескольких часов</span></p>
+                </article>
+                <article class="price__item anim-items">
+                    <h3>Качественно</h3>
+                    <p>Для меня важны <span>скорость загрузки</span> и <span>оригинальный внешний вид</span> вашего сайта, поэтому вся работа поддвергается тщательной проверке. <br>Для вашего удобства и внесения правок, я всегда нахожусь на связи</p>
+                </article>
+        </section>
+
+        <section class="form">
+            <div class="form__title">
+                <h3>Если вас заинтересовало мое предложение, то вы можете оставить заявку прямо сейчас!</h3>
+            </div>
+            <form class="form__block" action="#" id="form">
+                <label for="">
+                    <input type="text" placeholder="Ваше имя*" class="form__input _req">
+                </label>
+                <label for="">
+                    <input type="email" placeholder="Ваш e-mail*" class="form__input _req _email">
+                </label>
+                <textarea name="letter" placeholder="Кратко опишите заказ*" data-autoresize class="form__input _req"></textarea>
+                <button class="form__btn" type="submit">Отправить</button>
+            </form>
+            <p class="form__text">Приношу свои извенения, но форма в данный момент не работает!</p>
+        </section>
+
+        <section class="contacts anim-items">
+            <h3>Мои контакты:</h3>
+            <p>Мой VK: <a href="https://vk.com/id376783157"><span>https://vk.com/id376783157</span></a></p>
+            <p>Мой WhatsApp: <span>+7(923)-131-0726</span></p>
+        </section>
+    </div>
+
+    <div class="modal" id="btn1">
+        <div class="modal__content">
+            <button class="modal__close" type="submit">&times;</button>
+            <nav class="modal__content-list">
+                <div class="modal__content-item">
+                    <img src="img-page/header.png" alt="">
+                    <a href="indexlanding1.html" target="_blank">landing №1</a>
+                </div>
+                <div class="modal__content-item">
+                    <img src="img-page/img1.png" alt="">
+                    <a href="indexlanding2.html" target="_blank">landing №2</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="modal" id="btn2">
+        <div class="modal__content">
+            <button class="modal__close" type="submit">&times;</button>
+            <nav class="modal__content-list">
+                <div class="modal__content-item">
+                    <img src="img-page/img3.png" alt="">
+                    <a href="index.html" target="_blank">multi-page №1</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="modal" id="btn3">
+        <div class="modal__content">
+            <button class="modal__close" type="submit">&times;</button>
+            <nav class="modal__content-list">
+                <div class="modal__content-item">
+                    <img src="img-page/img2.png" alt="">
+                    <a href="indexletter.html" target="_blank">letter №1</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
